@@ -19,7 +19,7 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const [displayValue, setDisplayValue] = useState("");
   const addNumber = (number) => {
-    setDisplayValue(displayValue => displayValue + number);
+    setDisplayValue(displayValue => displayValue + number)
   };
 
   const addOperator = (operator) => {
@@ -36,15 +36,13 @@ function App() {
       <div className="App">
       <Logo />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-      
       <Display number={displayValue}/>
       <Specials />
       <Numbers addNumber={addNumber}/>
       <Operators addOperator={addOperator}/>
-      
+      {/* // <Specials={addSpecial} /> */}
       </div>
     </div>
   );
 }
-
 export default App;

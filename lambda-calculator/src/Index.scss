@@ -1,12 +1,11 @@
 .App {
     display: grid;
-    justify-content: center;
-    // align-items: center;
+    justify-content: space-evenly;
     grid-gap: 20px;
     grid-template-columns: 50px, 50px, 50px, 50px;
     padding: 20px;
-    width: 471px;
-    height: 709px;
+    width: 450px;
+    height: 700px;
     border-radius: 10px;
     background-color: #BB1233;
     
@@ -25,10 +24,6 @@
         width: 75%;
         color: white;
         border-radius: 40px;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 5;
     }
 
     .operator-btn, .special-btn, .number-btn {
@@ -39,6 +34,7 @@
         font-size: 1.4rem;
         border-style: hidden;
     }
+    
     .number-btn {
         background-color: #094377;
     }

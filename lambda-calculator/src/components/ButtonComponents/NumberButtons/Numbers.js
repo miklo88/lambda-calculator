@@ -17,8 +17,8 @@ const Numbers = (props) => {
 
       {buttonNumbers.map(number => {
         return <NumberButton key={number} 
-                             text={ number } 
-                             addNumber={ props.addNumber } />;
+        text={ number } 
+        addNumber={ props.addNumber } />;
       })}
 
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
